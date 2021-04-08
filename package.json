@@ -13,12 +13,13 @@
     "jwks-rsa": "^2.0.2",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
-    "nodemon": "^1.19.4"
+    "nodemon": "^1.19.4",
+    "vercel": "^21.3.3"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC"
