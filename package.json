@@ -1,8 +1,9 @@
 {
   "name": "practiceserver",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "Plant App API",
+  "main": "index.js",
+  "repository": "https://github.com/ClaireSheek/plantServer",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
