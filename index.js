@@ -17,6 +17,7 @@ app.use(cors())
 app.use(helmet())
 // app.use(checkJwt)
 app.use(morgan('combined'));
+
 app.use('/plants', plantsRouter)
 // app.use('/users', usersRouter)
 
