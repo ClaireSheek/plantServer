@@ -5,8 +5,8 @@ const cors = require('cors')
 const helmet = require('helmet')
 const morgan = require('morgan')
 const plantsRouter = require('./routers/plants')
-// const usersRouter = require('./routers/users')
-const { checkJwt } = require('./middleware')
+const usersRouter = require('./routers/users')
+// const { checkJwt } = require('./middleware')
 
 const app = express()
 const port = process.env.PORT || 4000
@@ -19,7 +19,7 @@ app.use(helmet())
 app.use(morgan('combined'));
 
 app.use('/plants', plantsRouter)
-// app.use('/users', usersRouter)
+app.use('/users', usersRouter)
 
 app.get('/', (req, res) => {
   res.send('Welcome to my Plant API! Add /plants to the url to view the list of all plants')
